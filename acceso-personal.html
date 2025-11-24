@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Personal - AutoElite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-wrapper">
+        <a href="index.html" class="logo">
+            <img src="assets/logo-autoelite.png" alt="AutoElite Logo" class="logo-light">
+            <img src="assets/logo-autoelite-blanco.png" alt="AutoElite Logo" class="logo-dark">
+        </a>
+        <h2 class="company-name">AutoElite</h2>
+
+        <div class="login-container" style="border-radius: 12px; border-top: 1px solid var(--color-borde);">
+            <h1 data-key="login_title_staff">Acceso Personal</h1>
+            <p data-key="login_desc_staff">Área privada para el personal de la empresa.</p>
+            
+            <p id="error-message" style="color: red; display: none;"></p>
+            
+            <form id="staff-login-form">
+                <div class="form-group"><label for="staff-email" data-key="login_email">Email</label><input type="email" id="staff-email" name="email" required></div>
+                <div class="form-group"><label for="staff-password" data-key="login_pass">Contraseña</label><input type="password" id="staff-password" name="password" required></div>
+                <button type="submit" class="btn btn-primario full-width" data-key="login_btn_login">Entrar</button>
+            </form>
+        </div>
+
+        <div class="login-footer-links">
+            <a href="index.html" class="back-link" data-key="login_back">← Volver al inicio</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script defer src="admin.js"></script>
+</body>
+</html>
